@@ -8,8 +8,6 @@ services:
       - DATABASE_URL=mysql+pymysql://testuser:testpass@db:3306/testdb
     depends_on:
       - db
-    volumes:
-      - .:/app
     networks:
       - app-network
 
